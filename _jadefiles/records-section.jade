@@ -1,0 +1,19 @@
+section.records#records
+  .flex.flex--center
+    
+    .col-50
+      .record-wrap
+        {% for record in site.records limit: 24 %}
+        a(href="records.html" style="background-image: url(assets/img/records/thumbnails/{{record.cover}})").record-thumb
+          .record-meta
+            .artist {{record.artist}}
+            .album-title {{record.album-title}}     
+        {% endfor %}
+      
+    .col-50.flex.flex--center.order-first
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented ...such as collecting and listening to records...
+          a(href="records.html").cta-btn See All Records
+          
+            

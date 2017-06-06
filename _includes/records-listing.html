@@ -1,0 +1,2 @@
+<div class="intro"><h2>Record Collection</h2><p>This collection will be filled up over time. So make sure to check back often.</p></div>{% assign records = site.records | sort: 'listing-priority' %}
+{% for record in records %}<div class="list-item"><div class="flex flex--listing"><div class="record-cover"><img width="180px" height="180px" src="assets/img/records/thumbnails/{{ record.cover }}"/></div><div class="record-info"><h4>{{record.artist}}:</h4><h3>{{record.album-title}}     </h3><p>{{record.format}}</p><p>{{record.content}}</p></div></div></div>{% endfor %}

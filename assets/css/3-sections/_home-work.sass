@@ -1,0 +1,29 @@
+section.work
+  color: white
+  background:
+    image: url(../img/work-bg.jpg)
+    position: center center
+    size: cover
+    height: 800px
+
+  .teaser
+    font:
+      size: 18px
+      padding-bottom: 400px
+      color: lighten($mint, 10%)
+
+  .home-lead
+    font:
+      color: lighten($mint, 10%)
+      size: 24px
+
+  .cta-btn
+    color: white
+    background: darken($mint, 9%)
+
+@media (max-width: 640px)
+  section.work
+    .home-lead
+      margin-left: auto
+      margin-right: auto
+      max-width: 300px

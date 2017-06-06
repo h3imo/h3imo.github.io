@@ -1,0 +1,21 @@
+.intro
+  h2 Record Collection
+  p This collection will be filled up over time. So make sure to check back often.
+
+{% assign records = site.records | sort: 'listing-priority' %}
+{% for record in records %}
+.list-item
+  .flex.flex--listing
+    .record-cover
+      img(width="180px" height="180px" src="assets/img/records/thumbnails/{{ record.cover }}")
+    .record-info
+      h4{{record.artist}}:
+      h3 {{record.album-title}}     
+      p {{record.format}}
+      p {{record.content}}
+{% endfor %}
+    
+    
+      
+          
+            

@@ -1,0 +1,91 @@
+.intro
+  padding: 20px
+
+  h2, p
+    color: white
+
+.records-wrap
+  display: flex
+  min-height: 100vh
+  background:
+    image: url(../img/records-bg.jpg)
+    size:
+    position: top center
+    color: $anthrazit
+
+
+  @media (max-width: 775px)
+    display: block
+
+.list-item
+  background-color: white
+  margin: 20px
+  padding: 20px
+  flex-direction: column
+
+  h3
+    line-height: 1.2
+    margin: 0 0 20px
+    font:
+      weight: bold
+      size: 24px
+  h4
+    line-height: 1.2
+    margin: 0
+    color: $anthrazit
+    font:
+      weight: normal
+      size: 16px
+  .cta-btn
+    background:
+      color: $primary-color
+    justify-content: flex-end
+    font:
+      size: 18px
+    color: white
+    width: 320px
+
+.records-entries
+  flex: 1
+
+  section
+    padding: 50px 0
+
+
+
+  // Flex Classes
+  .flex
+    display: flex
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .flex--listing
+    justify-content: flex-start
+
+  .order-first
+    order: -1
+
+
+
+// columns
+
+.record-cover
+  width: 220px
+  padding: 0
+
+.record-info
+  padding: 0 20px
+
+@media (max-width: 640px)
+  .records-entries .flex
+    display: block
+
+  .record-cover
+    width: 100%
+
+  .record-info
+    width: auto
